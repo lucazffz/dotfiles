@@ -1,0 +1,8 @@
+--theme="gruvbox-dark"
+
+--wrap=auto
+--paging=never
+
+--style=numbers,changes,header,snip,rule
+
+
