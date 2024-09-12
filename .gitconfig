@@ -1,0 +1,7 @@
+[user]
+	email = lucazzlindgren@hotmail.com
+	name = lucazffz
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
