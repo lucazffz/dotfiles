@@ -1,6 +1,7 @@
 [user]
 	email = lucazzlindgren@hotmail.com
-	name = lucazffz
+	name = "Lucaz Lindgren"
+    username = lucazffz
 [credential]
 	helper = store
 [init]
