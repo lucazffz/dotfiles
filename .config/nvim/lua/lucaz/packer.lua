@@ -70,5 +70,11 @@ return require('packer').startup(function(use)
             require('dap-go').setup()
         end
     }
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
     use "tpope/vim-unimpaired"
 end)

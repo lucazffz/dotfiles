@@ -33,7 +33,7 @@ local util = require("lspconfig/util")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { 'gopls', 'rust_analyzer', 'clangd', 'lua_ls', 'hls', 'pylsp' },
+    ensure_installed = { 'gopls', 'rust_analyzer', 'clangd', 'lua_ls', 'hls', 'pylsp', 'marksman' },
     automatic_installation = true,
     handlers = {
         function(server_name)
@@ -69,6 +69,13 @@ require("mason-lspconfig").setup({
                         },
                     },
                 },
+            })
+        end,
+        marksman = function()
+            require("lspconfig").marksman.setup({
+                cmd = { "marksman" },
+                filetypes = { "markdown" },
+                root_dir = util.root_pattern(".git"),
             })
         end,
 
