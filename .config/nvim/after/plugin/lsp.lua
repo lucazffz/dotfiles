@@ -33,7 +33,7 @@ local util = require("lspconfig/util")
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { 'gopls', 'rust_analyzer', 'clangd', 'lua_ls', 'hls', 'pylsp', 'marksman' },
+    ensure_installed = { 'gopls', 'rust_analyzer', 'clangd', 'lua_ls', 'pylsp', 'marksman' },
     automatic_installation = true,
     handlers = {
         function(server_name)
